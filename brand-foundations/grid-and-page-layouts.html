@@ -1,0 +1,271 @@
+---
+
+layout: content-tagged
+title: Grids and page layouts
+description: Grid and spacing guidelines for business.gov.au
+breadcrumb1: Brand foundations
+url1: /brand-foundations.html
+bga-tag: true
+subsite-tag: false
+
+---
+
+
+
+<div class="row">
+    
+    <div class="anchor-menu-wrapper col-12 col-lg-3 col-xl-2 d-none d-lg-block">
+
+        {% include anchor-menu.html
+        link-1="Vertical grid" link-id-1="#vertical-grid"
+            link-2="Page layouts" link-id-2="#page-layouts" 
+            link-3="Coloured background sections" link-id-3="#coloured-background-sections" 
+        %}
+        
+    </div>
+    
+    <div class="anchored-content remove-top-spaces mb-5 col-12 col-lg-9 col-xl-8">
+   
+          
+        <!-- VERTICAL GRID -->   
+        <h2 class="section-start" id="vertical-grid">Vertical grid</h2>
+        
+        <p>The business.gov.au website uses the <a href="https://getbootstrap.com/docs/5.2/layout/breakpoints/#available-breakpoints">bootstrap 12 column grid</a> with the following modifications:</p>
+        <ul>
+            <li>The maximum container width on the page is <strong>1320px</strong>.</li>
+            <li>At screen widths less than 1320px the container width is 64px less than the screen width (32px on either side).</li>
+            <li>At screen widths less than 576px the container is 48px less than the screen width (24px on each side).</li>
+            <li>The gutter between columns is <strong>32px</strong>.</li>
+            <li>An additional breakpoint of <strong>&ge;320px</strong> is occassionally used.</li>
+        </ul>
+        
+        <h3>Grid breakpoints</h3>
+                        
+       <table class="table">
+           <thead>
+               <tr>
+                   <th></th>
+                   <th>xs</th>
+                   <th>bga xs</th>
+                   <th>sm</th>
+                   <th>md</th>
+                   <th>lg</th>
+                   <th>xl</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>Minimum screen width</td>
+                   <td data-title="Extra small">&lt;576px</td>
+                   <td data-title="BGA extra small">&ge;320px</td>
+                   <td data-title="Small">&ge;576px</td>
+                   <td data-title="Medium">&ge;768px</td>
+                   <td data-title="Large">&ge;992px</td>
+                   <td data-title="Extra large">&ge;1200px</td>
+               </tr>
+
+               <tr>
+                   <td>Gutter</td>
+                   <td data-title="Extra small">16px</td>
+                   <td data-title="Extra small">16px</td>
+                   <td data-title="Small">32px</td>
+                   <td data-title="Medium">32px</td>
+                   <td data-title="Large">32px</td>
+                   <td data-title="Extra large">32px</td>
+               </tr>
+
+
+
+           </tbody>
+       </table>
+
+
+
+        <!-- PAGE LAYOUTS -->   
+        <h2 class="section-start" id="page-layouts">Page layouts</h2>
+
+        
+        <h3>Single column - full width layout</h3>
+        <p>This layout is typically used for navigation pages. Page patterns that use this layout include:</p>
+        <ul>
+            <li>Home page</li>
+            <li>Category page</li>
+            <li>Customer stories landing</li>
+        </ul>
+        
+
+        <!-- Single column - full width -->
+        <div class="layout-example full-border show single-col-fullwidth m-0 p-4">
+            
+           {% include layout-singlebreakpoint.html 
+            allbp-img="'../assets/layout-images/1colfullwidth-allbp.png' | relative_url "
+            allbp-rules="<p>The content area is 12 grid-columns wide.</p><p>The content area has a 32px margin above and below.</p><p>The first element within the content area has zero margin and padding above (regardless of what element it is).</p>"
+            %}
+            
+        </div>
+        
+        {% include design-specs-link.html 
+            btn-link="'../html-examples/single-col-full-width.html' | relative_url"
+            btn-text="View html example of the single column - full width layout"
+            %}
+        
+
+        
+        <!-- Single column - two thirds width -->
+        <h3>Single column - two thirds width layout</h3>
+        <p>This layout is typically used for information pages. Page patterns that use this layout include:</p>
+        <ul>
+            <li>Resource article page</li>
+            <li>External grants landing page</li>
+            <li>Customer story (single) page</li>
+        </ul>
+        
+
+        <div class="layout-example full-border show single-col-twothirdswidth m-0 px-4 py-0">
+            
+            {% include layout-breakpoints-accordion.html 
+                layout-name="onecol-twothirdsw"
+            
+                min1200-visibility="true"
+                min992-visibility="true"
+                min768-visibility="false"
+                min576-visibility="true"
+                finalbp-visibility="true"
+                
+                finalbp="Breakpoint &lt; 576px"
+               
+                min1200-img="'../assets/layout-images/1col2thirdswidth-min1200.png' | relative_url "
+            
+                min992-img="'../assets/layout-images/1col2thirdswidth-min992.png' | relative_url "
+
+                min576-img="'../assets/layout-images/1col2thirdswidth-min576.png' | relative_url "
+            
+                finalbp-img="'../assets/layout-images/1col2thirdswidth-finalbp.png' | relative_url "
+
+                min1200-rules="<p>The content area is 7 grid-columns wide. The content area is aligned to the left side of the page.</p><p>The content area has a 32px margin above and below.</p><p>The first element within the content area has zero margin and padding above (regardless of what element it is).</p><p>The content area has left and right padding of 32px.</p>"
+                min992-rules="<p>The content area is 8 grid-columns wide. The content area is aligned to the left side of the page.</p><p>The content area has a 32px margin above and below.</p><p>The first element within the content area has zero margin and padding above (regardless of what element it is).</p><p>The content area has left and right padding of 32px.</p>"
+                min576-rules="<p>The content area is 9 grid-columns wide. The content area is aligned to the left side of the page.</p><p>The content area has a 32px margin above and below.</p><p>The first element within the content area has zero margin and padding above (regardless of what element it is).</p><p>The content area has left and right padding of 32px.</p>"
+                finalbp-rules="<p>The content area is 12 grid-columns wide.</p><p>The content area has a 32px margin above and below.</p><p>The first element within the content area has zero margin and padding above (regardless of what element it is).</p><p>The content area has no padding left or right.</p>"
+                
+            %}
+            
+        </div>
+        
+        {% include design-specs-link.html 
+            btn-link="'../html-examples/single-col-two-thirds-width.html' | relative_url"
+            btn-text="View html example of the single column - two thirds width layout"
+            %}
+        
+        
+        
+        <!-- Two column - left side menu -->
+        <h3>Two column - left side menu layout</h3>
+        <p>This layout is typically used for information pages. Page patterns that use this layout include:</p>
+        <ul>
+            <li>101 page</li>
+            <li>Tutorial page</li>
+            <li>Internal grants landing page</li>
+        </ul>
+        
+        <div class="layout-example full-border show two-col-leftmenu m-0 px-4 py-0">
+            
+            {% include layout-breakpoints-accordion.html 
+                layout-name="onecol-twothirdsw"
+            
+                min1200-visibility="true"
+                min992-visibility="true"
+                min768-visibility="false"
+                min576-visibility="true"
+                finalbp-visibility="true"
+                
+                finalbp="Breakpoint &lt; 576px"
+               
+                min1200-img="'../assets/layout-images/2col-leftmenu-min1200.png' | relative_url "
+            
+                min992-img="'../assets/layout-images/2col-leftmenu-min992.png' | relative_url "
+
+                min576-img="'../assets/layout-images/2col-leftmenu-min576.png' | relative_url "
+            
+                finalbp-img="'../assets/layout-images/2col-leftmenu-finalbp.png' | relative_url "
+
+                min1200-rules="<p>The left side menu is 3 grid-columns wide. The content area is 7 grid-columns wide.</p><p>The area containing the side menu and the content has a 32px margin above and below.</p><p>The first element within the content area and the side menu have zero margin and padding above (regardless of what element it is).</p>"
+                min992-rules="<p>The left side menu is 3 grid-columns wide. The content area is 8 grid-columns wide</p><p>The area containing the side menu and the content has a 32px margin above and below.</p><p>The first element within the content area and the side menu have zero margin and padding above (regardless of what element it is).</p>"
+                min576-rules="<p>The left side menu is 3 grid-columns wide. The content area is 9 grid-columns wide.</p><p>The area containing the side menu and the content has a 32px margin above and below.</p><p>The first element within the content area and the side menu have zero margin and padding above (regardless of what element it is).</p>"
+                finalbp-rules="<p>The content area and the left side menu are both 12 grid-columns wide.</p><p>The area containing the side menu and the content has a 32px margin above and below.</p><p>The first element within the content area and the side menu have zero margin and padding above (regardless of what element it is).</p>"
+                
+            %}
+            
+        </div>
+        
+        {% include design-specs-link.html 
+            btn-link="'../html-examples/two-col-left-side-menu.html' | relative_url"
+            btn-text="View html example of the two column - left side menu layout"
+            %}
+        
+        
+        
+        <!-- Two column - right sidebar -->
+        <h3>Two column - right sidebar layout</h3>
+        <p>This layout is only used for pages that require a sidebar such as checklists and tools. It should not be used for general information pages or nagivation pages.</p>
+        
+        <div class="layout-example full-border show two-col-rightsidebar m-0 px-4 py-0">
+            
+            {% include layout-breakpoints-accordion.html 
+                layout-name="twocol-rightbar"
+            
+                min1200-visibility="false"
+                min992-visibility="true"
+                min768-visibility="false"
+                min576-visibility="false"
+                finalbp-visibility="true"
+                
+                finalbp="Breakpoint &lt; 992px"
+               
+      
+                min992-img="'../assets/layout-images/2col-rightsidebar-min992.png' | relative_url "
+
+            
+                finalbp-img="'../assets/layout-images/2col-rightsidebar-finalbp.png' | relative_url "
+
+
+                min992-rules="<p>The right sidebar is 3 grid-columns wide. The content area is 9 grid-columns wide</p><p>The area containing the sidebar and the content has a 32px margin above and below.</p><p>The first element within the content area has zero margin and padding above (regardless of what element it is).</p>"
+            
+                finalbp-rules="<p>The content area and the right sidebar are both 12 grid-columns wide. The right sidebar may be fixed to the bottom of the screen.</p><p>The area containing the sidebar and the content has a 32px margin above and below.</p><p>The first element within the content area has zero margin and padding above (regardless of what element it is).</p>"
+                
+            %}
+            
+        </div>
+        
+        {% include design-specs-link.html 
+            btn-link="'../html-examples/two-col-right-sidebar.html' | relative_url"
+            btn-text="View html example of the two column - right sidebar layout"
+            %}
+        
+
+
+        <!-- PAGE SECTIONS -->
+        <h2 class="section-start" id="coloured-background-sections">Coloured background sections</h2>
+        
+        <p><strong>Single column - full width layout pages</strong> can have sections with a light blue background (#C7D9EE). Coloured background sections should not be used in any other page layouts.</p>
+        <p>Coloured background sections should alwayus have a heading (usually a h2 level heading).</p>
+        <p>These sections should have 32px padding top and bottom as well as 32px margin top and bottom. The blue background colour extends left and right to the edge of the viewport.</p>
+        <p>Margin and padding elements within the coloured background sections remain the same as in the rest of the content.</p>
+    
+
+        <div class="layout-example show full-border p-4 m-0">
+            <div class="col-md-7">
+                <img class="responsive-img" src={{ "assets/layout-images/1colfullwidth-coloured-backgrounds.png" | relative_url }} alt="Diagram depicting the margin and padding on coloured background sections." />
+            </div>
+        </div>
+        {% include design-specs-link.html 
+            btn-link="'../html-examples/single-col-full-width-coloured-background.html' | relative_url"
+            btn-text="View html example of the coloured background section"
+            %}
+        
+        
+            
+        </div>
+    
+        
+    
+</div>

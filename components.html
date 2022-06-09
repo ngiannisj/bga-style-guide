@@ -1,0 +1,460 @@
+---
+
+layout: content
+title: Components
+description: A modular system of parts which form the building blocks of the site.
+
+---
+
+<div class="row">
+
+    {% include showing-number.html
+        tile-type="components"
+    %}
+    
+</div>
+
+<div class="row">
+    
+    <div class="col-12 col-md-4 col-xl-3  d-none d-md-block">
+
+        <div class="nav-tile-filters filter-component-type mt-0 mb-2 p-0">
+            <h5>Filter components</h5>
+
+            <fieldset>
+                {% include filter-item.html
+                    item-title="Download files" 
+                    item-string="download-files" %}
+                
+                {% include filter-item.html
+                    item-title="Feedback / user interaction" 
+                    item-string="feedback-user-interaction" %}
+                
+                {% include filter-item.html
+                    item-title="Headers and footers" 
+                    item-string="headers-and-footers" %}
+                
+                {% include filter-item.html
+                    item-title="Highlight information" 
+                    item-string="highlight-information" %}
+                
+                {% include filter-item.html
+                    item-title="Link to external pages" 
+                    item-string="link-to-external-pages" %}
+                
+                {% include filter-item.html
+                    item-title="Link to internal pages" 
+                    item-string="link-to-internal-pages" %}
+
+                {% include filter-item.html
+                    item-title="Minimise information" 
+                    item-string="minimise-information" %}
+                
+                {% include filter-item.html
+                    item-title="Navigation links" 
+                    item-string="navigation-links" %}
+                
+                {% include filter-item.html
+                    item-title="Tool specific components" 
+                    item-string="tool-specific-components" %}
+
+                {% include filter-item.html
+                    item-title="Visual and audio media" 
+                    item-string="visual-and-audio-media" %}
+                
+                {% include filter-item.html
+                    item-title="Warnings and notifications" 
+                    item-string="warnings-and-notifications" %}
+                 
+                
+            </fieldset>
+            
+        </div>
+        
+        <div class="nav-tile-search p-4 mb-4">
+            <label class="mb-3" for="component_name ">Search by component name</label>
+            <div class="input-wrapper">
+                <input type="text" id="component_name" name="component_name">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+        
+        <div class="reset-filters">
+            <button>Clear all filters<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16.01" viewBox="0 0 16 16.01">
+                        <path d="M4.01,4v7h7L7.792,7.782A5.919,5.919,0,0,1,12.015,6a6,6,0,1,1-5.654,8.005H4.28A8,8,0,1,0,6.361,6.351Z" transform="translate(-4.01 -4)" fill="#333" />
+                    </svg></button>
+        </div>
+        
+    </div>
+    
+    <div class="col-12 col-md-8 col-xl-9">
+   
+            <div class="row remove-element-padding">
+                
+            <!--<h2>Pathway components</h2>-->
+            
+            <!-- Hero pathway list -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper link-to-internal-pages link-to-external-pages bga-hero-pathway-list"
+                tile-url="components/hero-pathway.html"
+                tile-title="Hero pathway list" 
+                tile-tag1="Link to internal pages" 
+                tile-tag2="Link to external pages" 
+                tile-image="assets/nav-images/nav-tile-heropathway.svg" 
+            %}
+
+            <!-- Standard pathway list -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper link-to-internal-pages bga-standard-pathway-list"
+                tile-url="components/standard-pathway.html"
+                tile-title="Standard pathway list" 
+                tile-tag1="Link to internal pages" 
+                tile-image="assets/nav-images/nav-tile-standardpathway.svg" 
+            %}
+
+            <!-- Light pathway list -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper link-to-internal-pages link-to-external-pages bga-light-pathway-list coming-soon"
+                tile-title="Light pathway list" 
+                tile-tag1="Link to internal pages" 
+                tile-tag2="Link to external pages" 
+                tile-image="assets/nav-images/nav-tile-lightpathway.svg" 
+            %}
+            
+            <!-- Feature image pathway -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper link-to-internal-pages bga-feature-image-pathway coming-soon"
+                tile-title="Feature image pathway" 
+                tile-tag1="Link to internal pages" 
+                tile-image="assets/nav-images/nav-tile-featureimagepathway.svg" 
+            %}
+
+            <!-- Image pathway list -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper link-to-internal-pages bga-image-pathway-list coming-soon"
+                tile-title="Image pathway list" 
+                tile-tag1="Link to internal pages" 
+                tile-image="assets/nav-images/nav-tile-imagepathway.svg" 
+            %}
+
+            <!-- Inline pathway -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper link-to-internal-pages bga-link-to-external-pages inline-pathway coming-soon"
+                tile-title="Inline pathway" 
+                tile-tag1="Link to internal pages" 
+                tile-tag2="Link to external pages" 
+                tile-image="assets/nav-images/nav-tile-inlinepathway.svg" 
+            %}
+            
+            
+            <!--<h2>Content components</h2>-->
+              
+            <!-- Page headers -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper headers-and-footers bga-page-headers coming-soon"
+                tile-title="Page headers" 
+                tile-tag1="Headers and footers" 
+                tile-image="assets/nav-images/nav-tile-pageheaders.svg" 
+            %}
+                
+            <!-- Call to action -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper link-to-internal-pages link-to-external-pages highlight-information download-files bga-call-to-action coming-soon"
+                tile-title="Call to action" 
+                tile-tag1="Link to internal pages"
+                tile-tag2="Link to external pages" 
+                tile-tag3="Highlight information"
+                tile-tag4="Download files" 
+                tile-image="assets/nav-images/nav-tile-calltoaction.svg" 
+            %}
+                
+            <!-- Call out box-->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper highlight-information bga-call-out-box coming-soon"
+                tile-title="Call out box" 
+                tile-tag1="Highlight information"
+                tile-image="assets/nav-images/nav-tile-calloutbox.svg" 
+            %}
+                
+            <!-- Call out link -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper link-to-internal-pages link-to-external-pages highlight-information feedback-user-interaction bga-call-out-link coming-soon"
+                tile-title=" Call out link" 
+                tile-tag1="Link to internal pages"
+                tile-tag2="Link to external pages"
+                tile-tag3="Highlight information"
+                tile-tag4="Feedback / user interaction" 
+                tile-image="assets/nav-images/nav-tile-calloutlink.svg" 
+            %}
+                
+            <!-- Feature boxes -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper highlight-informaton bga-feature-boxes coming-soon"
+                tile-title="Feature boxes" 
+                tile-tag1="Highlight information"
+                tile-image="assets/nav-images/nav-tile-featurebox.svg" 
+            %}
+                
+                <!-- Accordion -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper minimise-information bga-accordion coming-soon"
+                tile-title="Accordion" 
+                tile-tag1="Minimise information"
+                tile-image="assets/nav-images/nav-tile-accordion.svg" 
+            %}
+                
+                <!-- Mini-list -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper minimise-information bga-mini-list coming-soon"
+                tile-title="Mini-list" 
+                tile-tag1="Minimise information"
+                tile-image="assets/nav-images/nav-tile-mini-list.svg" 
+            %}
+                
+                <!-- Table -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper minimise-information bga-table coming-soon"
+                tile-title="Table" 
+                tile-tag1="Minimise information"
+                tile-image="assets/nav-images/nav-tile-table.svg" 
+            %}
+                
+                <!-- Image -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper visual-and-audio-media bga-image coming-soon"
+                tile-title="Image" 
+                tile-tag1="Visual and audio media" 
+                tile-image="assets/nav-images/nav-tile-image.svg" 
+            %}
+                
+                <!-- Video player -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper visual-and-audio-media bga-video-player coming-soon"
+                tile-title="Video player" 
+                tile-tag1="Visual and audio media" 
+                tile-image="assets/nav-images/nav-tile-videoplayer.svg" 
+            %}
+                
+                <!-- Audio player -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper visual-and-audio-media bga-audio-player coming-soon"
+                tile-title="Audio player" 
+                tile-tag1="Visual and audio media" 
+                tile-image="assets/nav-images/nav-tile-audioplayer.svg" 
+            %}
+                
+                <!-- Download list -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper download-files bga-download-list coming-soon"
+                tile-title="Download list" 
+                tile-tag1="Download files" 
+                tile-image="assets/nav-images/nav-tile-downloadlist.svg" 
+            %}
+                
+                <!-- Grant status indicator -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper highlight-information bga-grant-status-indicator coming-soon"
+                tile-title="Grant status indicator" 
+                tile-tag1="Highlight information"  
+                tile-image="assets/nav-images/nav-tile-grantstatusindictor.svg" 
+            %}
+                
+                <!-- Pull quote -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper highlight-information bga-pull-quote coming-soon"
+                tile-title="Pull quote" 
+                tile-tag1="Highlight information" 
+                tile-image="assets/nav-images/nav-tile-pullquote.svg" 
+            %}
+                
+            <!-- Notifications -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper highlight-information warnings-and-notifications bga-notifications coming-soon"
+                tile-title="Notifications" 
+                tile-tag1="Highlight information" 
+                tile-tag2="Warnings and notifications" 
+                tile-image="assets/nav-images/nav-tile-notification.svg" 
+            %}
+                
+            <!-- Modal dialog -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper warnings-and-notifications bga-modal-dialog coming-soon"
+                tile-title="Modal dialog" 
+                tile-tag1="Warnings and notifications" 
+                tile-image="assets/nav-images/nav-tile-modal.svg" 
+            %}
+                
+            <!-- Disclaimer alerts -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper highlight-information warnings-and-notifications bga-disclaimer-alerts coming-soon"
+                tile-title="Disclaimer alerts" 
+                tile-tag1="Highlight information"
+                tile-tag2="Warnings and notifications" 
+                tile-image="assets/nav-images/nav-tile-disclaimeralert.svg" 
+            %}
+                
+            <!-- Global alert -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper highlight-information warnings-and-notifications bga-global-alert coming-soon"
+                tile-title="Global alert" 
+                tile-tag1="Highlight information" 
+                tile-tag2="Warnings and notifications" 
+                tile-image="assets/nav-images/nav-tile-globalalert.svg" 
+            %}
+                
+            <!--<h2>Navigation components</h2>-->
+                
+            <!-- business.gov.au site header -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper navigation-links headers-and-footers bga-site-header coming-soon"
+                tile-title="business.gov.au site header" 
+                tile-tag1="Headers and footers" 
+                tile-tag2="Warnings and notifications"
+                tile-image="assets/nav-images/nav-tile-bgasiteheader.svg" 
+            %}
+                
+            <!-- business.gov.au site footer -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper navigation-links headers-and-footers bga-site-footer coming-soon"
+                tile-title="business.gov.au site footer" 
+                tile-tag1="Headers and footers"
+                tile-tag2="Navigation links"
+                tile-tag3="Feedback / user interaction" 
+                tile-image="assets/nav-images/nav-tile-bgasitefooter.svg" 
+            %}
+                
+            <!-- Anchor menu -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper navigation-links bga-anchor-menu coming-soon"
+                tile-title="Anchor menu" 
+                tile-tag1="Navigation links"
+                tile-image="assets/nav-images/nav-tile-anchormenu.svg" 
+            %}
+                
+            <!-- Breadcrumbs -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper navigation-links bga-breadcrumbs coming-soon"
+                tile-title="Breadcrumbs" 
+                tile-tag1="Navigation links"
+                tile-image="assets/nav-images/nav-tile-breadcrumbs.svg" 
+            %}
+                  
+            <!-- Pagination -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper navigation-links bga-pagination coming-soon"
+                tile-title="Pagination" 
+                tile-tag1="Navigation links"
+                tile-image="assets/nav-images/nav-tile-pagination.svg" 
+            %}
+                
+            <!--<h2>User feedback and interaction</h2>-->
+                
+            <!-- Print and share utilities -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper feedback-user-interaction bga-print-and-share-utilities coming-soon"
+                tile-title="Print and share utilities" 
+                tile-tag1="Feedback / user interaction" 
+                tile-image="assets/nav-images/nav-tile-printandshareutilitiesshare.svg" 
+            %}
+            
+            <!-- Subscribe -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper feedback-user-interaction bga-subscribe coming-soon"
+                tile-title="Subscribe" 
+                tile-tag1="Feedback / user interaction" 
+                tile-image="assets/nav-images/nav-tile-subscribe.svg" 
+            %}
+                
+            <!-- Chat button -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper feedback-user-interaction bga-chat-button coming-soon"
+                tile-title="Chat button" 
+                tile-tag1="Feedback / user interaction" 
+                tile-image="assets/nav-images/nav-tile-chatbutton.svg" 
+            %}
+            
+            <!-- In page feedback -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper feedback-user-interaction bga-in-page-feedback coming-soon"
+                tile-title="In page feedback" 
+                tile-tag1="Feedback / user interaction" 
+                tile-image="assets/nav-images/nav-tile-inpagefeedback.svg" 
+            %}
+                
+            <!--<h2>Tool specific components</h2>-->
+                
+            <!-- Subsite header -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper headers-and-footers tool-specific-components bga-subsite-header coming-soon"
+                tile-title="Subsite header" 
+                tile-tag1="Tool specific components" 
+                tile-tag2="Headers and footers" 
+                tile-image="assets/nav-images/nav-tile-subsiteheader.svg" 
+            %}
+            
+            <!-- Subsite footer -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper headers-and-footers tool-specific-components bga-subsite-footer coming-soon"
+                tile-title="Subsite footer" 
+                tile-tag1="Tool specific components" 
+                tile-tag2="Headers and Footers"
+                tile-image="assets/nav-images/nav-tile-bgasubsitefooter.svg" 
+            %}
+                
+            <!-- Tool start component -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper tool-specific-components bga-tool-start-component coming-soon"
+                tile-title="Tool start component" 
+                tile-tag1="Tool specific components" 
+                tile-image="assets/nav-images/nav-tile-toolstartcomponent.svg" 
+            %}
+            
+            <!-- Stepped navigation -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper tool-specific-components navigation-links bga-stepped-navigation coming-soon"
+                tile-title="Stepped navigation" 
+                tile-tag1="Tool specific components" 
+                tile-tag2="Navigation links"
+                tile-image="assets/nav-images/nav-tile-steppednavigation.svg" 
+            %}
+            
+            <!-- Progress bar -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper tool-specific-components bga-progress-bar coming-soon"
+                tile-title="Progress bar" 
+                tile-tag1="Tool specific components" 
+                tile-image="assets/nav-images/nav-tileprogressbar.svg" 
+            %}
+                
+            <!-- Save your progress sidebar -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper tool-specific-components bga-save-your-progress-sidebar coming-soon"
+                tile-title="Save your progress sidebar" 
+                tile-tag1="Tool specific components" 
+                tile-image="assets/nav-images/nav-tile-saveyourprogresssidebar.svg" 
+            %}
+                
+            <!-- Search result / information tiles -->
+            {% include nav-image-tile.html 
+                classes="col-12 col-sm-6 col-md-12 col-lg-6 mb-5 nav-tile-wrapper tool-specific-components link-to-internal-pages bga-search-result-information-tiles coming-soon"
+                tile-title="Search result / information tiles" 
+                tile-tag1="Tool specific components" 
+                tile-tag2="Link to internal pages"
+                tile-image="assets/nav-images/nav-tile-searchresulttiles.svg" 
+            %}
+                            
+             
+                
+            <!-- No results -->
+                <div class="col-12 no-results">
+                    <h2>We couldn't find any component names containing <span></span>.</h2>
+                    <p>Please check your spelling or try an alternative search term.</p>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+    
+ 
