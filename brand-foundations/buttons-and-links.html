@@ -17,8 +17,8 @@ subsite-tag: true
     <div class="anchor-menu-wrapper col-12 col-lg-3 col-xl-2 d-none d-lg-block">
 
         {% include anchor-menu.html
-            link-1="Button styles light background" link-id-1="#button-styles-light-background"
-            link-2="Button styles dark background" link-id-2="#button-styles-dark-background"
+            link-1="Light background styles" link-id-1="#light-background-styles"
+            link-2="Dark background styles" link-id-2="#dark-background-styles"
             link-3="Design specifications" link-id-3="#designspecifications"
         %}
         
@@ -28,12 +28,13 @@ subsite-tag: true
    
           
         <!-- LIGHT BACKGROUND -->   
-        <h2 class="section-start" id="button-styles-light-background">Button styles - light background</h2>
+        <h2 class="section-start" id="light-background-styles">Light background styles</h2>
         
         
         <!-- Primary button -->
         <!-- Breakpoint radio buttons -->
         {% include breakpoints.html
+            element-string="primary-btn-light-bkg"
             xl-visibility="hide"
             lg-visibility="hide"
             md-visibility="hide"
@@ -45,9 +46,18 @@ subsite-tag: true
         <div class="component-example mb-5">
             <div class="component-wrapper remove-element-padding p-4">
                 
+                <h3>Primary button on a light background</h3>
                 <div class="row g-0">
-                    <div class="col-12 button-example">
+                    <div class="col-12 col-sm-5 col-md-4 button-example">
                         <button class="bga-btn bga-primary-btn bkg-light" tabindex="0" href="" role="button">Primary button</button>
+                    </div>
+                    
+                    <div class="col-12 col-sm-5 col-md-5 button-example">
+                        <button class="bga-btn bga-primary-btn bkg-light" tabindex="0" href="" role="button">Primary button
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M0,16V0H7V2H2V14H14V9h2v7ZM6.293,8.293,12.586,2H10V0h6V6H14V3.414L7.707,9.707ZM14,2h0Z" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
 
@@ -57,46 +67,45 @@ subsite-tag: true
                     
                     <div class="row g-0">
                         
-                        <div class="col-4">
-                            <div class="bga-btn-state default">
-                                <p >Default state</p>
-                                <p class="bga-btn">Primary button</p>
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Default state</p>
+                                <p class="bga-btn-state bga-primary-btn bkg-light default">Primary button</p>
                             </div>
                         </div>
 
 
-                        <div class="col-4">
-                            <div class="bga-btn-state hover">
-                                <p >Hover state</p>
-                                <p class="bga-btn hover">Primary button</p>
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Hover state</p>
+                                <p class="bga-btn-state bga-primary-btn bkg-light hover">Primary button</p>
                             </div>
                         </div>
 
 
-                        <div class="col-4">
+                        <div class="col-12 col-sm-5 col-md-4">
 
-                            <div class="bga-btn-state focus">
-                                <p >Focus state</p>
-                                <p class="bga-btn focus">Primary button</p>
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Focus state</p>
+                                <p class="bga-btn-state bga-primary-btn bkg-light focus">Primary button</p>
                             </div>
                         </div>
 
 
-                        <div class="col-4">
+                        <div class="col-12 col-sm-5 col-md-4">
 
-
-                            <div class="bga-btn-state active">
-                                <p >Active state</p>
-                                <p class="bga-btn active">Primary button</p>
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Active state</p>
+                                <p class="bga-btn-state bga-primary-btn bkg-light active">Primary button</p>
                             </div>
                         </div>
 
 
-                        <div class="col-4">
+                        <div class="col-12 col-sm-5 col-md-4">
 
-                            <div class="bga-btn-state disabled">
-                                <p >Disabled state</p>
-                                <p class="bga-btn disabled">Primary button</p>
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Disabled state</p>
+                                <p class="bga-btn-state bga-primary-btn bkg-light disabled">Primary button</p>
                             </div>
                         </div>
             </div>
@@ -104,12 +113,531 @@ subsite-tag: true
             </div>
         </div>
         
-            
+        
+        <!-- Secondary button -->
+        <!-- Breakpoint radio buttons -->
+        {% include breakpoints.html
+            element-string="secondary-btn-light-bkg"
+            xl-visibility="hide"
+            lg-visibility="hide"
+            md-visibility="hide"
+            sm-visibility="show"
+            final-visibility="show"
+            breakpoint-final="576px"
+        %}
+
+        <div class="component-example mb-5">
+            <div class="component-wrapper remove-element-padding p-4">
+                
+                <h3>Secondary button on a light background</h3>
+                <div class="row g-0">
+                    <div class="col-12 col-sm-5 col-md-4 button-example"> 
+                        <button class="bga-btn bga-secondary-btn bkg-light" tabindex="0" href="" role="button">Secondary button</button>
+                    </div>
+                    
+                    <div class="col-12 col-sm-5 col-md-5 button-example"> 
+                        <button class="bga-btn bga-secondary-btn bkg-light" tabindex="0" href="" role="button">Secondary button
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M0,16V0H7V2H2V14H14V9h2v7ZM6.293,8.293,12.586,2H10V0h6V6H14V3.414L7.707,9.707ZM14,2h0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="button-state-wrapper p-4">
+                    
+                    <div class="row g-0">
+                        
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Default state</p>
+                                <p class="bga-btn-state bga-secondary-btn bkg-light default">Secondary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Hover state</p>
+                                <p class="bga-btn-state bga-secondary-btn bkg-light hover">Secondary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Focus state</p>
+                                <p class="bga-btn-state bga-secondary-btn bkg-light focus">Secondary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Active state</p>
+                                <p class="bga-btn-state bga-secondary-btn bkg-light active">Secondary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Disabled state</p>
+                                <p class="bga-btn-state bga-secondary-btn bkg-light disabled">Secondary button</p>
+                            </div>
+                        </div>
+            </div>
+                    
+            </div>
+        </div>
+
+        
+        
+        <!-- Tertiary button -->
+        <!-- Breakpoint radio buttons -->
+        {% include breakpoints-singlebp.html %}
+
+        <div class="component-example mb-5">
+            <div class="component-wrapper remove-element-padding p-4">
+                
+                <h3>Tertiary button on a light background</h3>
+                <div class="row g-0">
+                    <div class="col-12 button-example"> 
+                        <a class="bga-link bga-tertiary-link bkg-light" tabindex="0" href="" role="button">Tertiary button</a>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="button-state-wrapper p-4">
+                    
+                    <div class="row g-0">
+                        
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-link-state-example">
+                                <p class="mb-2">Default state</p>
+                                <p class="bga-link-state bga-tertiary-link bkg-light default">Tertiary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Hover state</p>
+                                <p class="bga-link-state bga-tertiary-link bkg-light hover">Tertiary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Focus state</p>
+                                <p class="bga-link-state bga-tertiary-link bkg-light focus">Tertiary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Active state</p>
+                                <p class="bga-link-state bga-tertiary-link bkg-light active">Tertiary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Disabled state</p>
+                                <p class="bga-link-state bga-tertiary-link bkg-light disabled">Tertiary button</p>
+                            </div>
+                        </div>
+            </div>
+                    
+            </div>
+        </div>
+
+        
+        <!-- Inline link -->
+        <!-- Breakpoint radio buttons -->
+        {% include breakpoints-singlebp.html %}
+
+        <div class="component-example mb-5">
+            <div class="component-wrapper remove-element-padding p-4">
+                
+                <h3>In text link on a light background</h3>
+                <div class="row g-0">
+                    <div class="col-12 button-example"> 
+                        <a class="bga-link bga-inline-link bkg-light" tabindex="0" href="" role="button">In text link</a>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="button-state-wrapper p-4">
+                    
+                    <div class="row g-0">
+                        
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-link-state-example">
+                                <p class="mb-2">Default state</p>
+                                <p class="bga-link-state bga-inline-link bkg-light default">In text link</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Hover state</p>
+                                <p class="bga-link-state bga-inline-link bkg-light hover">In text link</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Focus state</p>
+                                <p class="bga-link-state bga-inline-link bkg-light focus">In text link</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Active state</p>
+                                <p class="bga-link-state bga-inline-link bkg-light active">In text link</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Disabled state</p>
+                                <p class="bga-link-state bga-inline-link bkg-light disabled">In text link</p>
+                            </div>
+                        </div>
+            </div>
+                    
+            </div>
+        </div>
+
+          
+        
+        
         
         <!-- DARK BACKGROUND -->   
-        <h2 class="section-start" id="button-styles-dark-background">Button styles - dark background</h2>
+        <h2 class="section-start" id="dark-background-styles">Dark background styles</h2>
+
+        <!-- Primary button -->
+        <!-- Breakpoint radio buttons -->
+        {% include breakpoints.html
+            element-string="primary-btn-dark-bkg"
+            xl-visibility="hide"
+            lg-visibility="hide"
+            md-visibility="hide"
+            sm-visibility="show"
+            final-visibility="show"
+            breakpoint-final="576px"
+        %}
+
+        <div class="component-example bkg-dark mb-5">
+            <div class="component-wrapper remove-element-padding p-4">
+                
+                <h3>Primary button on a dark background</h3>
+                <div class="row g-0">
+                    <div class="col-12 col-sm-5 col-md-4 button-example">
+                        <button class="bga-btn bga-primary-btn bkg-dark" tabindex="0" href="" role="button">Primary button</button>
+                    </div>
+                    <div class="col-12 col-sm-5 col-md-5 button-example">
+                        <button class="bga-btn bga-primary-btn bkg-dark" tabindex="0" href="" role="button">Primary button
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M0,16V0H7V2H2V14H14V9h2v7ZM6.293,8.293,12.586,2H10V0h6V6H14V3.414L7.707,9.707ZM14,2h0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="button-state-wrapper p-4">
+                    
+                    <div class="row g-0">
+                        
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Default state</p>
+                                <p class="bga-btn-state bga-primary-btn bkg-dark default">Primary button</p>
+                            </div>
+                        </div>
 
 
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Hover state</p>
+                                <p class="bga-btn-state bga-primary-btn bkg-dark hover">Primary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Focus state</p>
+                                <p class="bga-btn-state bga-primary-btn bkg-dark focus">Primary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Active state</p>
+                                <p class="bga-btn-state bga-primary-btn bkg-dark active">Primary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Disabled state</p>
+                                <p class="bga-btn-state bga-primary-btn bkg-dark disabled">Primary button</p>
+                            </div>
+                        </div>
+            </div>
+                    
+            </div>
+        </div>
+        
+        
+        <!-- Secondary button -->
+        <!-- Breakpoint radio buttons -->
+        {% include breakpoints.html
+            element-string="secondary-btn-dark-bkg"
+            xl-visibility="hide"
+            lg-visibility="hide"
+            md-visibility="hide"
+            sm-visibility="show"
+            final-visibility="show"
+            breakpoint-final="576px"
+        %}
+
+        <div class="component-example bkg-dark mb-5">
+            <div class="component-wrapper remove-element-padding p-4">
+                
+                <h3>Secondary button on a dark background</h3>
+                <div class="row g-0">
+                    <div class="col-12 col-sm-5 col-md-4 button-example"> 
+                        <button class="bga-btn bga-secondary-btn bkg-dark" tabindex="0" href="" role="button">Secondary button</button>
+                    </div>
+                    
+                    <div class="col-12 col-sm-5 col-md-5 button-example"> 
+                        <button class="bga-btn bga-secondary-btn bkg-dark" tabindex="0" href="" role="button">Secondary button
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M0,16V0H7V2H2V14H14V9h2v7ZM6.293,8.293,12.586,2H10V0h6V6H14V3.414L7.707,9.707ZM14,2h0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="button-state-wrapper p-4">
+                    
+                    <div class="row g-0">
+                        
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Default state</p>
+                                <p class="bga-btn-state bga-secondary-btn bkg-dark default">Secondary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Hover state</p>
+                                <p class="bga-btn-state bga-secondary-btn bkg-dark hover">Secondary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Focus state</p>
+                                <p class="bga-btn-state bga-secondary-btn bkg-dark focus">Secondary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Active state</p>
+                                <p class="bga-btn-state bga-secondary-btn bkg-dark active">Secondary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Disabled state</p>
+                                <p class="bga-btn-state bga-secondary-btn bkg-dark disabled">Secondary button</p>
+                            </div>
+                        </div>
+            </div>
+                    
+            </div>
+        </div>
+
+        
+        
+        <!-- Tertiary button -->
+        <!-- Breakpoint radio buttons -->
+        {% include breakpoints-singlebp.html %}
+
+        <div class="component-example bkg-dark mb-5">
+            <div class="component-wrapper remove-element-padding p-4">
+                
+                <h3>Tertiary button on a dark background</h3>
+                <div class="row g-0">
+                    <div class="col-12 button-example"> 
+                        <a class="bga-link bga-tertiary-link bkg-dark" tabindex="0" href="" role="button">Tertiary button</a>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="button-state-wrapper p-4">
+                    
+                    <div class="row g-0">
+                        
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-link-state-example">
+                                <p class="mb-2">Default state</p>
+                                <p class="bga-link-state bga-tertiary-link bkg-dark default">Tertiary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Hover state</p>
+                                <p class="bga-link-state bga-tertiary-link bkg-dark hover">Tertiary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Focus state</p>
+                                <p class="bga-link-state bga-tertiary-link bkg-dark focus">Tertiary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Active state</p>
+                                <p class="bga-link-state bga-tertiary-link bkg-dark active">Tertiary button</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Disabled state</p>
+                                <p class="bga-link-state bga-tertiary-link bkg-dark disabled">Tertiary button</p>
+                            </div>
+                        </div>
+            </div>
+                    
+            </div>
+        </div>
+
+        
+        <!-- Inline link -->
+        <!-- Breakpoint radio buttons -->
+        {% include breakpoints-singlebp.html %}
+
+        <div class="component-example bkg-dark mb-5">
+            <div class="component-wrapper remove-element-padding p-4">
+                
+                <h3>In text link on a dark background</h3>
+                <div class="row g-0">
+                    <div class="col-12 button-example"> 
+                        <a class="bga-link bga-inline-link bkg-dark" tabindex="0" href="" role="button">In text link</a>
+                    </div>
+                </div>
+
+                </div>
+
+                <div class="button-state-wrapper p-4">
+                    
+                    <div class="row g-0">
+                        
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-link-state-example">
+                                <p class="mb-2">Default state</p>
+                                <p class="bga-link-state bga-inline-link bkg-dark default">In text link</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Hover state</p>
+                                <p class="bga-link-state bga-inline-link bkg-dark hover">In text link</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Focus state</p>
+                                <p class="bga-link-state bga-inline-link bkg-dark focus">In text link</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Active state</p>
+                                <p class="bga-link-state bga-inline-link bkg-dark active">In text link</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-12 col-sm-5 col-md-4">
+
+                            <div class="bga-btn-state-example">
+                                <p class="mb-2">Disabled state</p>
+                                <p class="bga-link-state bga-inline-link bkg-dark disabled">In text link</p>
+                            </div>
+                        </div>
+            </div>
+                    
+            </div>
+        </div>
+
+        
 
         
         <!-- Design specifications link -->

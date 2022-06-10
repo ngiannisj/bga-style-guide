@@ -3,26 +3,30 @@
     <div class="larger-screens">
     <p class="pe-3 m-0">{{ include.example-name }}Breakpoints:</p>
     
-    <fieldset>
+    <fieldset id="{{include.element-string}}-group">
        
+         <div class="btn-toolbar" role="toolbar">
+        
         <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
 
-            <input type="radio" class="btn-check {{ include.xl-visibility }}" name="btnradio" id="breakpoint-xl" autocomplete="off" data-breakpoint="bp-min1200">
-            <label class="btn btn-outline-primary py-2 px-3 {{ include.xl-visibility }}" for="breakpoint-xl">≥1200px (xl)</label>
+            <input type="radio" class="btn-check {{ include.xl-visibility }}" name="{{include.element-string}}-group" id="{{include.element-string}}-bp-xl" autocomplete="off" data-breakpoint="bp-min1200">
+            <label class="btn btn-outline-primary py-2 px-3 {{ include.xl-visibility }}" for="{{include.element-string}}-bp-xl">≥1200px (xl)</label>
 
-            <input type="radio" class="btn-check {{ include.lg-visibility }}" name="btnradio" id="breakpoint-lg" autocomplete="off" data-breakpoint="bp-min992">
-            <label class="btn btn-outline-primary py-2 px-3 {{ include.lg-visibility }}" for="breakpoint-lg">≥992px (lg)</label>
+            <input type="radio" class="btn-check {{ include.lg-visibility }}" name="{{include.element-string}}-group" id="{{include.element-string}}-bp-lg" autocomplete="off" data-breakpoint="bp-min992">
+            <label class="btn btn-outline-primary py-2 px-3 {{ include.lg-visibility }}" for="{{include.element-string}}-bp-lg">≥992px (lg)</label>
 
-            <input type="radio" class="btn-check {{ include.md-visibility }}" name="btnradio" id="breakpoint-md" autocomplete="off" data-breakpoint="bp-min768">
-            <label class="btn btn-outline-primary py-2 px-3 {{ include.md-visibility }}" for="breakpoint-md">≥768px (md)</label>
+            <input type="radio" class="btn-check {{ include.md-visibility }}" name="{{include.element-string}}-group" id="{{include.element-string}}-bp-md" autocomplete="off" data-breakpoint="bp-min768">
+            <label class="btn btn-outline-primary py-2 px-3 {{ include.md-visibility }}" for="{{include.element-string}}-bp-md">≥768px (md)</label>
 
-            <input type="radio" class="btn-check {{ include.sm-visibility }}" name="btnradio" id="breakpoint-sm" autocomplete="off" data-breakpoint="bp-min576">
-            <label class="btn btn-outline-primary py-2 px-3 {{ include.sm-visibility }}" for="breakpoint-sm">≥576px (sm)</label>
+            <input type="radio" class="btn-check {{ include.sm-visibility }}" name="{{include.element-string}}-group" id="{{include.element-string}}-bp-sm" autocomplete="off" data-breakpoint="bp-min576">
+            <label class="btn btn-outline-primary py-2 px-3 {{ include.sm-visibility }}" for="{{include.element-string}}-bp-sm">≥576px (sm)</label>
 
-            <input type="radio" class="btn-check {{ include.final-visibility }}" name="btnradio" id="breakpoint-final" autocomplete="off" data-breakpoint="bp-mobile">
-            <label class="btn btn-outline-primary py-2 px-3 {{ include.final-visibility }}" for="breakpoint-final">&lt;{{ include.breakpoint-final}}</label>
+            <input type="radio" class="btn-check {{ include.final-visibility }}" name="{{include.element-string}}-group" id="{{include.element-string}}-bp-final" autocomplete="off" data-breakpoint="bp-mobile">
+            <label class="btn btn-outline-primary py-2 px-3 {{ include.final-visibility }}" for="{{include.element-string}}-bp-final">&lt;{{ include.breakpoint-final}}</label>
 
-        </div>     
+        </div>
+             
+        </div>
 
     </fieldset>
     </div>

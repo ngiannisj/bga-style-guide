@@ -208,11 +208,22 @@ if( $('#anchor-menu').length ) {
     }
     
     
+// PREVENT EMPTY LINKS CAUSING PAGE SCROLL
+$('a').on('click', function(e){
+    if ( $(this).attr('href') === "") {
+        e.preventDefault();
+    }
+});
+    
+    
 // COMPONENTS PAGE - BREAKPOINT RADIO BUTTONS
 $('.breakpoints .hide').each(function(){
     $(this).remove();
 });
-$('.breakpoints input').first().attr('checked', 'checked');
+
+$('.breakpoints .btn-group').each(function(){
+    $(this).find('input').first().attr('checked', 'checked');
+});    
     
 $('.breakpoints input').on('click', function(){
     if ( $(this).is(":checked") ) {

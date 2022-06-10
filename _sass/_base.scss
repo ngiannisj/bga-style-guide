@@ -475,6 +475,13 @@
             width: 50%;
         }
     }
+    &.bkg-dark {
+        background: $bga-blue-background-dark;
+        
+        h3, p {
+            color: $bga-white;
+        }
+    }
 }
 
 
@@ -758,6 +765,13 @@
         .smaller-screens {
             display: block;
         }
+    }
+}
+
+@media (max-width: 450px) {
+    .col-xs {
+        flex: 1 0 0%;
+        width: 100%;
     }
 }
 
