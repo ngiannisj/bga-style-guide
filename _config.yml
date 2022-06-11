@@ -48,7 +48,6 @@ url: "https://ausgov.github.io" # the base hostname & protocol for your site, e.
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-#
 
 sass:
   load_paths:
