@@ -8,7 +8,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 #
-# If you need help with YAML syntax, here are some quick references for you: 
+# If you need help with YAML syntax, here are some quick references for you:
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
@@ -23,7 +23,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   Brand guidance for business.gov.au
 baseurl: "/bga-style-guide" # the subpath of your site, e.g. /blog
 url: "https://ausgov.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
 
 # Build settings
 # theme: minima
@@ -51,8 +50,6 @@ url: "https://ausgov.github.io" # the base hostname & protocol for your site, e.
 #   - vendor/ruby/
 
 sass:
-    load_paths:
-        - _sass
-        - vendor/bundle/ruby/3.1.0/gems/bootstrap-5.1.3/assets/stylesheets
-        
-        
+  load_paths:
+    - _sass
+    - vendor/bundle/ruby/2.7.0/gems/bootstrap-5.1.3/assets/stylesheets
