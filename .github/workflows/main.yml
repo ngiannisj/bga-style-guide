@@ -22,5 +22,9 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
 
-    # Standard usage
-    - uses:  lemonarc/jekyll-action@1.0.0
+    # Specify the target branch (optional)
+    - uses: helaili/jekyll-action@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        target_branch: 'gh-pages'
+        pre_build_commands: "sudo apt install ruby-full"
