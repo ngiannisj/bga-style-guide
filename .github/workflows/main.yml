@@ -22,6 +22,7 @@ jobs:
           
     - run: |
         bundle install
+        jekyll build
         
     # Deploy to local repo
     - name: Deploy
