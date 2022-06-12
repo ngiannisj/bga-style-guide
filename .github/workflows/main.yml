@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - run: echo "ruby -v"
+    - run: ruby -v
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.1.0' # Not needed with a .ruby-version file
-    - run: echo "ruby -v"
+    - run: ruby -v
 
     # Standard usage
     - uses:  helaili/jekyll-action@v2
