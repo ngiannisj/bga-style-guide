@@ -27,4 +27,4 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: 'gh-pages'
-        pre_build_commands: "sudo apt install ruby-full"
+        pre_build_commands: "apt install ruby-full"
