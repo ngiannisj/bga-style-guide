@@ -20,4 +20,6 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
           
-    - run: bundle exec jekyll serve
+    - run: |
+        bundle install
+        bundle exec jekyll serve
