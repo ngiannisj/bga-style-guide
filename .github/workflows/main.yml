@@ -14,8 +14,13 @@ jobs:
         ruby-version: '3.1.0' # Not needed with a .ruby-version file
     - run: ruby -v
 
-    # Standard usage
-    - uses:  helaili/jekyll-action@v2
+    # Use GitHub Actions' cache to shorten build times and decrease load on servers
+    - uses: actions/cache@v1
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        target_branch: 'gh-pages'
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+
+    # Standard usage
+    - uses:  lemonarc/jekyll-action@1.0.0
