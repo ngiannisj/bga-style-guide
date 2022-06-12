@@ -22,5 +22,4 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
 
-    # Standard usage
-    - uses:  lemonarc/jekyll-action@1.0.0
+    - uses: jerryjvl/jekyll-build-action@v1
